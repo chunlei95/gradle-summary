@@ -2,12 +2,25 @@
 ## 一些基础知识
 > 首先，Gradle脚本是配置脚本。在脚本执行时，它配置特定类型的对象。例如，在构建脚本执行时，它会配置`Project`类型的对象。
 此对象称为脚本的委托对象。下表显示了每种Gradle脚本的委托：
-```text
-        脚本类型	            委托对象
-        Build script	    Project
-        Init script	        Gradle
-        Settings script	    Settings
-```
+<table>
+    <tr>
+        <th>脚本类型</th>
+        <th>委托对象</th>
+    </tr>
+    <tr>
+        <td>Build script</td>
+        <td>Project</td>
+    </tr>
+    <tr>
+        <td>Init script</td>
+        <td>Gradle</td>
+    </tr>
+    <tr>
+        <td>Settings script</td>
+        <td>Settings</td>
+    </tr>
+</table>
+
 > 其次，每个Gradle脚本都实现了`Script`接口。此接口定义了许多可在脚本中使用的属性和方法
 
 ## 构建脚本结构
